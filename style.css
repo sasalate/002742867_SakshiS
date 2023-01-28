@@ -121,11 +121,10 @@ section{
 .heading{
     font-size: 45px;
     color: rgb(82, 82, 82);
-    MARGIN-TOP: -106PX;
-    MARGIN-LEFT: -65PX;
-    PADDING-BOTTOM: 59PX;
-    text-decoration: solid;
-
+    MARGIN-TOP: -103PX;
+    MARGIN-LEFT: 330PX;
+    PADDING-BOTTOM: -28PX;
+    text-decoration: solid
 }
 
 .heading1{
@@ -156,6 +155,10 @@ section{
    
 }
 
+.home-text{
+    color:#000
+}
+
 .img_about{
     width: 339px;
     padding-top:50px;
@@ -177,6 +180,7 @@ section{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5rem;
         align-items: center;
+        background: linear-gradient(#69696b,#7a93b7);
     
 }
 
@@ -311,10 +315,128 @@ section{
 /* End contact section */
 
 
-
+.heading-skills{
+color: #fff;
+margin-left: 415px;
+text-decoration: solid;
+font-size: 30px;
+}
 .skills{
     color: #000;
+    background: linear-gradient(#69696b,#7a93b7);
+    
 }
+.row{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px
+    }
+
+
+.row .col{
+    flex-basis: 46%;
+    margin-top: -65px;
+}
+
+.row .sub-title h2{
+    position: relative;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: helvetica;
+    display: inline-block;
+    margin-bottom: 30px;
+    }
+
+
+    .row .sub-title h2::before{
+        content: '';
+        position: absolute;
+        width: 25%;
+        height: 1px;
+        top: calc(125% - Ipx);
+        Left: e;
+        background-color: #fefefe;
+        MARGIN-TOP: 59PX;
+        MARGIN-LEFT: 35PX;
+     }
+
+
+    .row .sub-title h2::after{
+        content : '';
+        position: absolute;
+        width: 25%;
+        height: 2px;
+        top: calc(125% - Ipx);
+        Left: e;
+        background-color: #3183fe;
+        MARGIN-TOP: 33PX;
+        MARGIN-LEFT: -57PX;
+    }
+
+    .subject{
+        font-size: 18px;
+        font-weight: thin;
+        color: #e6f1f1;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        }
+        .progress-bar{
+        position: relative;
+        width: 201px;
+        height: 5px;
+        background-color: #f0efef;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        }
+
+
+        .progress-bar::after {
+            position: absolute;
+            content: attr(value);
+            top: -20px;
+            margin-left: 167px;
+            right: e;
+            color: #808080;
+            font-size: 18px;
+        }
+        .progress-line{
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: #3e73be;
+            border-radius: 15px;
+            top: -Ipx;
+            animation: animate 1. 5s cubic-bezier(l,
+            0.2, 0.2,1)forwards;
+            }
+
+            @keyframes animate{
+                100%{
+                width: 100%;
+                }
+                }
+                .progress-line::after{
+                    content : '';
+                    position: absolute;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    top: 50%;
+                    left: 100%;
+                    transform: translate(-50%, -50%);
+                    background-color:#3e73be;
+                }
+                @media(max-width: 768px){
+                    .container{
+                    padding: 30px 8%;
+                    }}
+                    @media (max-width: 568px){
+                    .container .row{
+                    flex-direction: column;
+                    }}
+                    
+
 
 .fadetext{
     opacity: .9;
